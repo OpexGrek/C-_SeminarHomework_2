@@ -1,4 +1,7 @@
 ﻿Console.Write("Input 3 number ");
 int ThreeDigitNumber = Convert.ToInt32(Console.ReadLine());
 string stringNumber = Convert.ToString(ThreeDigitNumber);
-Console.Write("The second number " + stringNumber[1]);
+if(stringNumber.Length !=3)
+    Console.WriteLine("Input only 3 numbers");
+else    
+    Console.Write("The second number " + stringNumber[1]);
